@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Valentine's Day ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        overflow-y:auto;
+        font-family: 'Segoe UI', cursive;
+        background:hotpink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .container {
+        width:90%;
+        max-width:900px;
+        height:80vh;
+        background:rgba(255,255,255,0.2);
+        border-radius:20px;
+        padding:20px;
+        box-sizing:border-box;
+        text-align:center;
+        color:white;
+        display:none;
+    }
+
+    h1 {
+        font-size: 3em;
+        animation: glow 2s infinite alternate;
+    }
+
+    p {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .photos {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .photos img {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(255,255,255,0.6);
+        animation:none;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #fff; }
+        to { text-shadow: 0 0 25px #ff69b4; }
+    }
+
+    /* Falling hearts */
+    .heart {
+        position: absolute;
+        color: red;
+        pointer-events: none;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(-10vh);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(110vh);
+            opacity: 0;
+        }
+    }
+
+    /* Click explosion hearts */
+    .burst {
+        position: absolute;
+        pointer-events: none;
+        animation: explode 1s ease-out forwards;
+    }
+
+    @keyframes explode {
+        0% {
+            transform: translate(0,0) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(var(--x), var(--y)) scale(0.3);
+            opacity: 0;
+        }
+    }
+    /* Letter overlay screen */
+#letterScreen {
+    position: fixed;
+    inset: 0;
+    background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Envelope box */
+.envelope {
+    width: 220px;
+    height: 160px;
+    background: #ff4d6d;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: floatLetter 2s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top flap */
+.flap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: #ff758f;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+/* Letter icon */
+.letter-body {
+    font-size: 50px;
+    z-index: 2;
+}
+
+/* Tap text */
+.tap-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Floating animation */
+@keyframes floatLetter {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+</style>
+</head>
+
+<body>
+    <audio id="bgMusic" loop>
+    <source src="love.mp3" type="audio/mpeg">
+</audio>
+    <!-- Letter Screen -->
+<div id="letterScreen">
+    <div class="envelope" onclick="openLetter()">
+        <div class="flap"></div>
+        <div class="letter-body">💌</div>
+        <div class="tap-text">To my baby</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>❤️Happy Valentine’s Day❤️</h1>
+    <p>To my forever prettiest babyyyyyyyy umaaaaaahhhhhhhh😘😘😘😘</p>
+
+    <div class="photos">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+        <img src="photo5.jpg">
+        <img src="photo6.jpg">
+        <img src="photo7.jpg">
+        <img src="photo8.jpg">
+        <img src="photo9.jpg">
+        <img src="photo10.jpg">
+    </div>
+    <p>My baby🫶🏻,
+
+    Nono ang manwi tabok atwi kahai ma tongwo je ki ang daily gift mn tongma kahai.Nwng ano phonok kha kubui hamjakma bwtwi
+    tei ang belai kheno kwpal kaham nono manwi.Nwng tongkhe ani din anek kaham wngwo baby nwng nou ano pura feel khai rewo.
+    waisa woiso walai jakwo abo bagwi ag khoma sano but ag nono hamjak sogo babyyyyyy nwng simi ang bi tongkhe wngjakwo ag
+    tei kono nangya.Nwng sara ag bahai se tongna ni babyyyyyyy and ang amo joli fru rogo simi se kakna rok sawo kubui wo khe
+    ang bo maya.Chwng naidi 3 years wngkha babyy teibo thangna tongkhu life wo and we can do it babyyyyyy believe me bas bech
+    meh shor ke maat jana iloveyouuuuu babyyyyyyyyyyyyyyyyyyyyy💖💖💖💖💖💖💖💖💖💖💖💖💖
+    This valentines Day I want to remind you that you will be my heart and my everything for forever thankyouuuuuuuuuuu for
+    lovinggggg meeeeeee and always choosinggggggg meeeeeeeeeeeeeee🥰🥰🥰🥰🥰🥰😘😘😘😘😘🌹🌹🌹🌹🌹🌹🌹🌹🌹
+
+
+
+
+
+    </p>
+</div>
+
+<script>
+    // Falling hearts
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 20 + 15 + "px";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 50);
+
+    // Click / Tap heart explosion
+    document.addEventListener("click", function(e) {
+        for (let i = 0; i < 12; i++) {
+            const burst = document.createElement("div");
+            burst.className = "burst";
+            burst.innerHTML = "❤️";
+
+            burst.style.left = e.clientX + "px";
+            burst.style.top = e.clientY + "px";
+            burst.style.fontSize = Math.random() * 20 + 10 + "px";
+
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = Math.random() * 80 + 30;
+
+            burst.style.setProperty("--x", Math.cos(angle) * distance + "px");
+            burst.style.setProperty("--y", Math.sin(angle) * distance + "px");
+
+            document.body.appendChild(burst);
+
+            setTimeout(() => burst.remove(), 1000);
+        }
+    });
+    function openLetter() {
+    document.getElementById("letterScreen").style.display = "none";
+    document.querySelector(".container").style.display = "block";
+}
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    music.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
